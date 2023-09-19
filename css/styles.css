@@ -2,8 +2,9 @@
   --font: "Rubik", sans-serif;
   --text-color: black;
   --background-color: white;
-  --accent-color: #C5CDD1; /* chrome: #F1F3F4 first: #a2afaf;*/
-  --accent-color-rgb: 162, 175, 175;
+  --accent-color: #c5cdd1; /* chrome: #F1F3F4 first: #a2afaf;*/
+  --accent-color-rgb: 197, 205, 209;
+  --accent-color-darker: #aeb5b8;
 }
 
 ::selection {
@@ -16,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a3a3a3;
+  background: var(--accent-color-darker);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -42,23 +43,33 @@ footer {
   background-color: var(--accent-color);
 }
 
+button a,
+button a:hover {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+button {
+  background: var(--accent-color);
+}
+
+button:hover {
+  background: var(--accent-color-darker);
+  transition: all 200ms ease-in-out;
+}
+
 .hero-h1 {
   font-weight: 700;
-  font-size: min(calc(20vw),calc(40vh));
+  font-size: min(calc(20vw), calc(40vh));
 }
 
 .hero-h2 {
   font-weight: 300;
-  font-size: min(calc(20vw),calc(40vh));
+  font-size: min(calc(20vw), calc(40vh));
 }
 
 .custom-btn {
   background: var(--accent-color);
   border: none;
   font-size: x-large;
-}
-
-button a, button a:hover{
-  color: var(--text-color);
-  text-decoration: none;
 }
