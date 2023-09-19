@@ -43,6 +43,7 @@ footer {
   background-color: var(--accent-color);
 }
 
+/*
 button a,
 button a:hover {
   color: var(--text-color);
@@ -57,6 +58,7 @@ button:hover {
   background: var(--accent-color-darker);
   transition: all 200ms ease-in-out;
 }
+*/
 
 .hero-h1 {
   font-weight: 700;
