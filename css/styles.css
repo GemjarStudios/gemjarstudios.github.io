@@ -1,0 +1,41 @@
+:root {
+  --font: "Rubik", sans-serif;
+  --text-color: black;
+  --background-color: #white;
+  --accent-color: #a2afaf;
+  --accent-color-rgb: 162, 175, 175;
+}
+
+::selection {
+  background: var(--accent-color);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font);
+  text-align: center;
+}
+
+hero {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+footer {
+  background-color: var(--accent-color);
+}
+
+.hero-h1 {
+  font-weight: 700;
+}
+
+.hero-h2 {
+  font-weight: 300;
+}
+
+.hero-btn {
+  background: var(--accent-color);
+}
