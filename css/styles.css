@@ -30,10 +30,11 @@ body {
   color: var(--text-color);
   font-family: var(--font);
   text-align: center;
+  font-size: larger;
 }
 
 hero {
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   flex-flow: column;
@@ -62,12 +63,12 @@ button:hover {
 
 .hero-h1 {
   font-weight: 700;
-  font-size: min(calc(20vw), calc(40vh));
+  font-size: min(calc(18vw), calc(36vh));
 }
 
 .hero-h2 {
   font-weight: 300;
-  font-size: min(calc(20vw), calc(40vh));
+  font-size: min(calc(18vw), calc(36vh));
 }
 
 .custom-btn {
@@ -75,3 +76,17 @@ button:hover {
   border: none;
   font-size: x-large;
 }
+
+.contact-icons i {
+  margin: 0.25em;
+  font-size: 10vw;
+  color: var(--text-color);
+}
+
+.contact-icons i:hover,
+.contact-icons a:hover {
+  color: var(--accent-color);
+  background: transparent;
+  transition: all 200ms ease-in-out;
+}
+
